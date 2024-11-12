@@ -1,0 +1,152 @@
+/* Основний стиль сторінки */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f3;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Стилі для верхнього меню */
+.top-menu {
+    background-color: #fff; /* Такий же колір, як у sidebar */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Така ж тінь, як у sidebar */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.navbar-logo {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.search-form {
+    display: inline-flex;
+    align-items: center;
+}
+
+.search-form input {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-form button {
+    padding: 5px 15px;
+    font-size: 16px;
+    border: 1px solid #00a2ff;
+    background-color: #00a2ff;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #007acc;
+}
+
+/* Контейнер для всього контенту */
+.main-container {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+
+/* Стиль для бокового меню з категоріями */
+.sidebar {
+    width: 200px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.sidebar h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #00a2ff;
+}
+
+/* Список товарів */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.product-item {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-item h3 {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Стиль футера */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #cacbc7;
+    margin-top: auto;
+}
